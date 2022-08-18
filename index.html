@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="icon" type="image/png" href="Images/favicon-32x32.png">
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+</head>
+
+<body>
+
+    <header>
+      
+        <button type="button" class="menu-btn"><i class="fa-solid fa-bars menu"></i></button>
+        <a href="/" class="logo"><img src="Images/logo-udemy.svg" alt="Udemey Logo" class="udemy-logo"></a>
+        <nav>
+            <button class="category">Categories</button>
+         
+        </nav>
+        <form action="" class="udemy-search" id="search-form">
+            <button type="submit" class="search-icon" id="search-btn"><i class="fa fa-search"></i></button>
+            <input type="text" name="q" id="search-text" placeholder="Search for anything" class="search-text">
+        </form>
+        <a href="" class="business-link">Udemy Business</a>
+        <a href="" class="teach-link">Teach on Udemy</a>
+        <a href="" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="" class="log-in btn">Log in</a>
+        <a href="" class="sign-up">Sign up</a>
+        <button class="lang btn"><i class="fa-solid fa-globe"></i></button>
+    </header>
+    <main>
+        <section class="headline">
+            <img class="clock-img" src="Images/clock.jpg" alt="clock">
+            <div class="headline-text">
+                <h1>New to Udemy? Lucky you.</h1>
+                <p>Courses start at E£169.99. Get your new-student offer before it expires.</h2>
+            </div>
+        </section>
+        <section class="headline-courses">
+            <h1>A broad selection of courses</h1>
+            <p>Choose from 185,000 online video courses with new additions published every month</p>
+        </section>
+        <section class="main-container">
+            <div class="tabs">
+                <ul class=" tab nav nav-pills">
+                    <li class="nav-item tab active">
+                        <a class="nav-link tab" onclick ="LoadCategory('Python')"href="#">Python</a>
+                      </li>
+                    <li class="nav-item tab">
+                        <a class="nav-link tab " onclick ="LoadCategory('Excel')" href="#">Excel</a>
+                      </li>
+                    <li class="nav-item tab">
+                      <a class="nav-link tab" onclick ="LoadCategory('Web')" href="#">Web Development</a>
+                    </li>
+                    <li class="nav-item tab">
+                        <a class="nav-link tab" onclick ="LoadCategory('js')"href="#">JavaScript</a>
+                      </li>
+                      <li class="nav-item tab">
+                        <a class="nav-link tab"onclick ="LoadCategory('DataScience')" href="#">Data Science</a>
+                      </li>
+                      <li class="nav-item tab">
+                        <a class="nav-link tab" onclick ="LoadCategory('AWS')"href="#">AWS Certification</a>
+                      </li>
+                      <li class="nav-item tab">
+                        <a class="nav-link tab"onclick ="LoadCategory('Draw')" href="#">Drawing</a>
+                      </li>
+                    
+                  </ul>
+            </div>
+            <div class="courses">
+                <h1 id = "courses-header">Expand your career opportunities with Python </h1>
+                <p  id = "courses-description"class="udemy-python">Take one of Udemy's range of Python courses and learn how to code using this
+                    incredibly useful
+                    language. Its simple syntax and readability makes Python perfect for Flask, Django, data science,
+                    and machine learning. You'll learn how to build everything from games to sites to apps. Choose from
+                    a range of courses that will appeal to both beginners and advanced developers alike.
+                </p>
+                <a  id = "Explore" href="#" class="explore-python btn">Explore Python</a>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" id="cards-holder">
+
+                    </div>
+                    <a class="carousel-control-prev arrow" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <i class="fa-solid fa-circle-chevron-left slider-left"></i>
+                    </a>
+                    <a class="carousel-control-next arrow" href="#carouselExampleControls" role="button" data-slide="next">
+                        <i class="fa-solid fa-circle-chevron-right slider-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- /category-design-v2.jpg -->
+        <section class="row wh">
+            <article class="col"><a href="#"><img src="Images/category-design-v2.jpg" alt="Design"> <p>Design</p></a></article>
+            <article class="col"><a href="#"><img src="Images/category-development-v2.jpg" alt="Development"> <p>Development</p></a></article>
+            <article class="col"><a href="#"><img src="Images/category-marketing-v2.jpg" alt="Marketing"> <p>Marketing</p></a></article>
+            <article class="col"><a href="#"><img src="Images/category-it-and-software-v2.jpg" alt="it and software"> <p>it and software</p></a></article>
+            <article class="col"><a href="#"><img src="Images/category-personal-development-v2.jpg" alt="personal-development"> <p>Personal Development</p></a></article >
+            <article class="col"><a href="#"><img src="Images/category-business-v2.jpg" alt="business"> <p>Business</p></a></article>
+            <article class="col"><a href="#"><img src="Images/category-photography-v2.jpg" alt="photography"> <p>photography</p></a></article>
+            <article class="col"><a href="#"><img src="Images/category-music-v2.jpg" alt="Music"> <p>Music</p></a></article>
+      
+        </section>
+        
+    </main>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
